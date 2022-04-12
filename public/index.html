@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Joris van Elk</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Roboto+Mono:wght@100;400&family=Source+Code+Pro:wght@200;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="https://kit.fontawesome.com/7bf7264db6.js" crossorigin="anonymous"></script>
+
+        <!-- Import maps polyfill -->
+        <!-- Remove this when import maps will be widely supported -->
+        <script
+            async
+            src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+        ></script>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "./build/three.module.js"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <i id="menuToggle" class="fa-solid fa-bars fa-2x"></i>
+            <nav id="sideNav">
+                <ul>
+                    <li class="navItem">HOME</li>
+                    <li class="navItem">SECTION2</li>
+                </ul>
+            </nav>
+            <section>
+                <div id="mainLanding">
+                    <h1 class="landingText">Hey There!</h1>
+                    <h2 class="landingText">My name is Joris</h2>
+                </div>
+                <i id="continue1" class="fa-solid fa-chevron-down fa-3x fa-beat"></i>
+            </section>
+            <section>
+                <div id="contentGrid">
+                    <div id="sec2Landing">
+                        <h1>About me</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, itaque, tenetur dolor consequuntur necessitatibus in, distinctio nam perspiciatis ullam voluptate vero culpa veniam sint iusto? Laudantium quidem ad sunt fuga vel veritatis eos explicabo voluptatem, aspernatur et incidunt laborum repellat vitae consectetur, quam quas nesciunt facere nam? Laborum pariatur incidunt culpa laudantium accusantium officiis dignissimos modi minima nihil. Laboriosam nam repudiandae eaque est praesentium nesciunt voluptates id corporis, possimus deserunt. Dolores id nihil odio quaerat voluptatem facere nemo provident voluptate!</p>
+                    </div>
+                    <div class="photogrid"><p>CR</p></div>
+                    <div class="photogrid"><p>EA</p></div>
+                    <div class="photogrid"><p>TI</p></div>
+                    <div class="photogrid"><p>VI</p></div>
+                    <div class="photogrid"><p>TY</p></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- JS Import -->
+        <script type="module" src="client.js"></script>
+        <script src="scripts/navToggle.js"></script>
+    </body>
+</html>
